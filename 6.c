@@ -19,7 +19,8 @@ double end_time = MPI_Wtime();
 if (rank == 0) { 
 printf("Total Mangoes picked by %d Robots = %d\n", numproc, total_sum); 
 printf("Time taken for the computation: %f seconds\n", end_time - start_time); 
-} 
+}
+  
 MPI_Finalize(); 
 return 0; 
 }
